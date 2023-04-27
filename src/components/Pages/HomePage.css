@@ -1,0 +1,95 @@
+.employee td, .employee th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 500px;
+    color:black;
+
+  }
+  .employee{
+   
+  }
+  .employee div{   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: blue; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    
+  }
+ 
+  .buttons button{  
+   margin-left: 5px;
+  }
+  .add_employee{
+    position: absolute;
+    right: 25px;
+    background-color: #507bf1;
+    color: white;
+    border-radius: 5px;
+  }
+ 
+  .employee tr:nth-child(odd){background-color: #a5cdf3;}
+
+  .employee tr:hover {background-color: #ddd;}
+  .employee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #507bf1;
+    color: white;
+  }
+  .table_data{
+    
+    position: fixed; 
+    background-color: rgba(107, 60, 246, 0.815);
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    gap: 8px;
+    background-color: aliceblue;
+    padding: 30px;
+    
+  }
+  .modal_container{
+    position: relative;
+    
+    
+  }
+  .remove-icon{
+    
+    font-size: 30px;
+    align-self: self-end;
+    color: rgb(227, 54, 54);
+  }
+  .form{
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 3;
+  }
+  .form label{
+    align-self: flex-start;
+    font-size: 10px;
+    margin-bottom: -10px;
+    font-weight: bold;
+  }
+  .overlayer{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.411); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  

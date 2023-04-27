@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import EmployeeReducer from '../src/components/features/EmployeeSlice'
+
+const store =configureStore({
+  reducer:{
+    users:EmployeeReducer
+  }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+    <App/>
+    </Provider>    
   </React.StrictMode>
 );
 
